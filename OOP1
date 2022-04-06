@@ -1,0 +1,31 @@
+public class Rider {
+   int riderNumber;
+
+   public Rider(String name) {
+      // This constructor has one parameter, name.
+      System.out.println("Name chosen is :" + name );
+   }
+
+   public void setNumber( int number ) {
+      riderNumber = number;
+   }
+
+   public int getNumber( ) {
+      System.out.println("Rider's number is :" + riderNumber );
+      return riderNumber;
+   }
+
+   public static void main(String []args) {
+      /* Object creation */
+      Rider myRider = new Rider( "rossi" );
+
+      /* Call class method to set puppy's age */
+      myRider.setNumber( 46 );
+
+      /* Call another class method to get puppy's age */
+      myRider.getNumber( );
+
+      /* You can access instance variable as follows as well */
+      System.out.println("Variable Value :" + myRider.riderNumber );
+   }
+}
